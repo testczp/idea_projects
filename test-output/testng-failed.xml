@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [android-suit]" parallel="none">
+  <test name="homepage(failed)" parallel="none">
+    <classes>
+      <class name="appium.cases.ExpectJobCase">
+        <methods>
+          <include name="addExpectJob"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- appium.cases.ExpectJobCase -->
+    </classes>
+  </test> <!-- homepage(failed) -->
+</suite> <!-- Failed suite [android-suit] -->

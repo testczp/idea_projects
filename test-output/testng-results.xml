@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="28353" started-at="2020-03-30T15:33:02Z" finished-at="2020-03-30T15:33:31Z">
+    <groups>
+    </groups>
+    <test name="AppiumDemo" duration-ms="28353" started-at="2020-03-30T15:33:02Z" finished-at="2020-03-30T15:33:31Z">
+      <class name="appium.cases.HomeTestCase">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:appium.cases.HomeTestCase@10aa41f2]" name="beforeTestMethod" is-config="true" duration-ms="10" started-at="2020-03-30T23:33:02Z" finished-at="2020-03-30T23:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method status="PASS" signature="SearchTest()[pri:0, instance:appium.cases.HomeTestCase@10aa41f2]" name="SearchTest" duration-ms="28062" started-at="2020-03-30T23:33:02Z" finished-at="2020-03-30T23:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTest -->
+        <test-method status="PASS" signature="AfterTestMethod()[pri:0, instance:appium.cases.HomeTestCase@10aa41f2]" name="AfterTestMethod" is-config="true" duration-ms="0" started-at="2020-03-30T23:33:30Z" finished-at="2020-03-30T23:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestMethod -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:appium.cases.HomeTestCase@10aa41f2]" name="AfterTest" is-config="true" duration-ms="266" started-at="2020-03-30T23:33:30Z" finished-at="2020-03-30T23:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- appium.cases.HomeTestCase -->
+    </test> <!-- AppiumDemo -->
+  </suite> <!-- Default Suite -->
+</testng-results>

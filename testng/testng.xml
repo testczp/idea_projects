@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="android-suit" verbose="1" >
+    <test name="homepage" >
+        <classes>
+            <class name="appium.cases.HomeTestCase" >
+                <methods>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<listeners>-->
+        <!--<listener class-name="org.testng.reporters.SuiteHTMLReporter"/>-->
+    <!--</listeners>-->
+</suite>
