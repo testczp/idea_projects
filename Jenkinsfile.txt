@@ -3,7 +3,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                java
+                echo 'begin to copy files.'
+                cd /Users/Shared/Jenkins/Home/workspace/appiumdemo
+                cp MANIFEST.MF /Users/chenzepeng/Downloads/workplace
+                ls | egrep '.+[^M][^F]$' | xagrs cp -r /Users/chenzepeng/Downloads/workplace/appiumdemo
+                cd /Users/chenzepeng/Downloads/workplace
+                echo 'complete copy.'
+                echo 'begin progress command jar.'
+                jar cvfm test.jar MANIFEST.MF -C appiumdemo/ .
+                echo 'end.'
             }
         }
     }
