@@ -4,13 +4,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'begin to copy files.'
-                cd /Users/Shared/Jenkins/Home/workspace/appiumdemo
-                cp MANIFEST.MF /Users/chenzepeng/Downloads/workplace
-                ls | egrep '.+[^M][^F]$' | xagrs cp -r /Users/chenzepeng/Downloads/workplace/appiumdemo
-                cd /Users/chenzepeng/Downloads/workplace
+                sh 'cd /Users/Shared/Jenkins/Home/workspace/appiumdemo'
+                sh 'cp MANIFEST.MF /Users/chenzepeng/Downloads/workplace'
+                sh 'ls | egrep '.+[^M][^F]$' | xargs cp -r /Users/chenzepeng/Downloads/workplace/appiumdemo'
+                sh 'cd /Users/chenzepeng/Downloads/workplace'
                 echo 'complete copy.'
                 echo 'begin progress command jar.'
-                jar cvfm test.jar MANIFEST.MF -C appiumdemo/ .
+                sh 'jar cvfm test.jar MANIFEST.MF -C appiumdemo/ .'
                 echo 'end.'
             }
         }
