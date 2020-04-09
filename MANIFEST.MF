@@ -1,0 +1,3 @@
+Mainfest-Version: 1.0
+Main-Class: appium.page.Chrome
+Class-Path: lib/java-client-7.3.0.jar
