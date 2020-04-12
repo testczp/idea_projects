@@ -59,12 +59,12 @@ public class Chrome{
         MobileElement t3 = (MobileElement)driver.driver.findElementByXPath("//*[@resource-id='com.dark.focus:id/id_gridView']" +
                 "/android.widget.RelativeLayout[2]/android.widget.ImageView");
         t3.click();
-        zoomInOrOut();
-//        try {
-//            new ZoomUtil().ZoomInAndOut(driver.driver);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+//        zoomInOrOut();
+        try {
+            new ZoomUtil().ZoomInAndOut(driver.driver);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        System.out.println(t.getText());
 //        longPress(t);
 //        moveByTap(300, 1400, 300, 200);
@@ -102,7 +102,7 @@ public class Chrome{
         }
 //        driver.driver.unlockDevice();
 //        driver.driver.closeApp();
-        driver.driver.terminateApp("com.hpbr.bosszhipin");
+//        driver.driver.terminateApp("com.hpbr.bosszhipin");
         driver.close();
 
     }
@@ -110,6 +110,7 @@ public class Chrome{
     public static void main(String[] args){
         Chrome c = new Chrome();
         c.testWeb();
+        System.out.println(System.getProperty("user.dir"));
     }
 
     /**

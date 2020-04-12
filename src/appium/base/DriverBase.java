@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
  * Created by chenzepeng on 2020/1/17.
  */
 public class DriverBase {
-    public AndroidDriver<?> driver;
+    public AndroidDriver<MobileElement> driver;
 //    public WebDriver driver;
     private List<String> UUIDList;//设备id列表
     private InitDriver init;
@@ -36,7 +36,7 @@ public class DriverBase {
 
     public DriverBase() {
         // 读取appium连接属性
-        rw = new ReadProperties("/Users/chenzepeng/Documents/idea_projects/resources/initDriver.properties");
+        rw = new ReadProperties(System.getProperty("user.dir") + "/resources/initDriver.properties");
         // 杀死当前正在运行的node进程，然后为当前连接的每台设备启动Appium-Server，返回设备列表的端口列表对象
         Map<Integer, Integer> portMap = StartAppiumServer.start();
 

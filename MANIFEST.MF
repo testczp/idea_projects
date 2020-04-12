@@ -1,3 +1,17 @@
 Mainfest-Version: 1.0
 Main-Class: appium.page.Chrome
 Class-Path: lib/java-client-7.3.0.jar
+ lib/byte-buddy-1.8.15.jar
+ lib/client-combined-3.141.59.jar
+ lib/commons-exec-1.3.jar
+ lib/commons-io-2.6.jar
+ lib/commons-lang3-3.9.jar
+ lib/guava-25.0-jre.jar
+ lib/java-json.jar
+ lib/log4j-1.2-api-2.8.1.jar
+ lib/log4j-api-2.8.1.jar
+ lib/log4j-core-2.8.1.jar
+ lib/log4j-slf4j-impl-2.8.1.jar
+ lib/okhttp-3.11.0.jar
+ lib/okio-1.14.0.jar
+ lib/selenium-server-standalone-3.141.59.jar

@@ -10,6 +10,7 @@ import javafx.scene.web.WebView;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,12 +25,12 @@ import java.util.Set;
  */
 public class InitDriver {
     private ReadProperties rw;
-    private AndroidDriver<MobileElement> driver;
+    private AndroidDriver<WebElement> driver;
 //    private static final Logger log = LogManager.getLogger(InitDriver.class.getName());
 
     public InitDriver() {
 
-        rw = new ReadProperties("/Users/chenzepeng/Documents/idea_projects/resources/initDriver.properties");
+        rw = new ReadProperties(System.getProperty("user.dir") + "/resources/initDriver.properties");
     }
 
     /**
